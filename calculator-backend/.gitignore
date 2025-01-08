@@ -1,0 +1,71 @@
+﻿# .NET Core
+
+## Ignore build and publish outputs
+bin/
+obj/
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Auto-generated files
+*.log
+*.lock.json
+*.cache
+*.coverage
+*.testsettings
+*.vs/
+
+## Ignore temporary files
+~$*
+*.tmp
+*.temp
+
+## Ignore Rider project files
+.idea/
+*.sln.iml
+*.sln
+
+## Ignore Visual Studio Code
+.vscode/
+
+# קבצים ספציפיים לפרויקטי ASP.NET Core
+**/bin/**
+**/obj/**
+**/Properties/launchSettings.json
+
+## Ignore dependencies
+*.nuget/
+packages/
+
+## Ignore deployment files
+*.publishsettings
+*.pubxml
+*.publish.xml
+
+## Ignore secrets
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+.env
+
+## Ignore generated code
+Generated_Code/
+
+## Ignore database files
+*.mdf
+*.ldf
+
+## Ignore tooling files
+*.dotnet_tools.json
+*.global.json
+
+## Ignore test results
+TestResults/
+*.trx
+*.coverage
+
+# Custom exclusions (add any additional files or patterns you want to ignore below)
