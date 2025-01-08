@@ -1,0 +1,58 @@
+<form [formGroup]="salaryForm">
+  <div>
+    <label for="positionPercentage">חלקיות משרה:</label>
+    <select id="positionPercentage" formControlName="positionPercentage">
+      <option *ngFor="let option of positionPercentages" [value]="option.value">
+        {{ option.label }}
+      </option>
+    </select>
+  </div>
+
+  <div>
+    <label for="professionalLevel">רמה מקצועית:</label>
+    <select id="professionalLevel" formControlName="professionalLevel">
+      <option *ngFor="let option of professionalLevels" [value]="option.value">
+        {{ option.label }}
+      </option>
+    </select>
+  </div>
+
+  <div>
+    <label for="managementLevel">רמה ניהולית:</label>
+    <select id="managementLevel" formControlName="managementLevel">
+      <option *ngFor="let option of managementLevels" [value]="option.value">
+        {{ option.label }}
+      </option>
+    </select>
+  </div>
+
+  <div>
+    <label for="yearsOfExperience">שנות וותק:</label>
+    <input
+      type="number"
+      id="yearsOfExperience"
+      formControlName="yearsOfExperience"
+    />
+  </div>
+
+  <div>
+    <label for="isEntitledToBonus">זכאי לתוספת:</label>
+    <input
+      type="checkbox"
+      id="isEntitledToBonus"
+      formControlName="isEntitledToBonus"
+    />
+  </div>
+
+  <div *ngIf="salaryForm.get('isEntitledToBonus')?.value">
+    <label for="group">קבוצה:</label>
+    <select id="group" formControlName="group">
+      <option value="0">קבוצה א'</option>
+      <option value="1">קבוצה ב'</option>
+    </select>
+  </div>
+
+  <button type="button" (click)="onSubmit()" [disabled]="!salaryForm.valid">
+    חשב שכר
+  </button>
+</form>

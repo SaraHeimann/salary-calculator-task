@@ -1,0 +1,43 @@
+<div *ngIf="salaryData">
+  <h3>תוצאות חישוב שכר</h3>
+  <table>
+    <tr>
+      <th>פרטי השכר</th>
+      <th>סכום</th>
+    </tr>
+    <tr>
+      <td>שכר יסוד לפי חלקיות משרה</td>
+      <td>{{ salaryData.baseSalary | currency : "ILS" }}</td>
+    </tr>
+    <tr>
+      <td>שיעור תוספת וותק באחוזים</td>
+      <td>{{ salaryData.seniorityBonusPercentage }}%</td>
+    </tr>
+    <tr>
+      <td>שיעור תוספת וותק לשכר</td>
+      <td>{{ salaryData.seniorityBonusAmount | currency : "ILS" }}</td>
+    </tr>
+    <tr>
+      <td>סה"כ תוספת עבודה מתוקףמינוי בחוק</td>
+      <td>{{ salaryData.additionalWorkBonus | currency : "ILS" }}</td>
+    </tr>
+    <tr>
+      <td>סה"כ שכר בסיס לפני העלאה</td>
+      <td>{{ salaryData.baseSalaryBeforeRaise | currency : "ILS" }}</td>
+    </tr>
+    <tr>
+      <td>שיעור העלאת שכר באחוזים</td>
+      <td>{{ salaryData.raisePercentage }}%</td>
+    </tr>
+    <tr>
+      <td>סה"כ תוספת העלאת שכר</td>
+      <td>{{ salaryData.raiseAmount | currency : "ILS" }}</td>
+    </tr>
+    <tr>
+      <td><b>שכר בסיס לאחר העלאה</b></td>
+      <td>
+        <b>{{ salaryData.finalSalary | currency : "ILS" }}</b>
+      </td>
+    </tr>
+  </table>
+</div>
