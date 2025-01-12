@@ -76,7 +76,7 @@ project_root
 │   │   ├── app
 │   │   │   ├── salary-input-form
 │   │   │   ├── salary-result
-│   │   │   └── services
+│   │   │   └── salary.service
 │   ├── angular.json
 │   └── package.json
 ```
