@@ -26,7 +26,7 @@ This project is a web-based salary calculator designed to help employees estimat
 1. Clone the repository:
    ```bash
    git clone https://github.com/SaraHeimann/salary-calculator-task.git
-   cd salary-calculator-task/backend
+   cd salary-calculator-task/calculator-backend
    ```
 2. Restore dependencies:
    ```bash
@@ -41,7 +41,7 @@ This project is a web-based salary calculator designed to help employees estimat
 ### Frontend Setup
 1. Navigate to the frontend folder:
    ```bash
-   cd salary-calculator-task/frontend
+   cd salary-calculator-task/salary-calculator-client
    ```
 2. Install dependencies:
    ```bash
